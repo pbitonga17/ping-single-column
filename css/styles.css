@@ -48,7 +48,7 @@ html {
 /* -------- INPUT -------- */
 form {
     display: grid;
-    gap: 1rem;
+    gap: 5px;
 }
 #email {
     border: 1px solid hsl(223, 100%, 88%);
@@ -61,10 +61,12 @@ form {
     font-size: 16px;
 }
 .hidden {
-    display: none;
+    display: block;
     color: red;
     font-size: 12px;
     font-style: italic;
+    display: grid;
+    grid-row: 2;
 }
 #submit {
     padding: 15px 20px;
@@ -111,10 +113,29 @@ li {
     p {
         font-size: 2rem;
     }
+    .stat-img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
     form {
         display: grid;
+        grid-template-columns: 2fr 1fr;
         max-width: 60%;
         margin: 0 auto;
+    }
+    #submit {
+        display: grid;
+        grid-column: 2;
+        grid-row: 1;
+        cursor: pointer;
+    }
+    .warning {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    li {
+        cursor: pointer;
     }
     .copyright {
         font-size: 1.5rem;
