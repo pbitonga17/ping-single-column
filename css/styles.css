@@ -60,13 +60,16 @@ form {
     color: hsl(223, 100%, 88%);
     font-size: 16px;
 }
-.hidden {
+.warning {
     display: block;
     color: red;
     font-size: 12px;
     font-style: italic;
     display: grid;
     grid-row: 2;
+}
+.hidden {
+    display: none;
 }
 #submit {
     padding: 15px 20px;
@@ -133,6 +136,9 @@ li {
         display: grid;
         grid-column: 1;
         grid-row: 2;
+    }
+    .hidden {
+        display: none;
     }
     li {
         cursor: pointer;
