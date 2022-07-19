@@ -1,0 +1,122 @@
+/* font-family: 'Libre Franklin', sans-serif; */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 62.5%;
+    
+    display: grid;
+    place-items: center;
+}
+.main {
+    margin: 5vw 10vw;
+    display: grid;
+    gap: 6rem;
+}
+.ping-logo {
+    display: block;
+    margin: 20px auto;
+}
+
+.main__text {
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+    font-size: 16px;
+}
+.text {
+    display: grid;
+    gap: 1.5rem;
+}
+.heading {
+    font-weight: 300;
+    font-size: 2.8rem;
+    color: hsl(0, 0%, 59%);
+}
+.bold {
+    font-weight: 700;
+    color: black;
+}
+/* -------- INPUT -------- */
+form {
+    display: grid;
+    gap: 1rem;
+}
+#email {
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 25px;
+    padding: 15px 20px;
+}
+::placeholder {
+    font-family: 'Libre Franklin', sans-serif;
+    color: hsl(223, 100%, 88%);
+    font-size: 16px;
+}
+.hidden {
+    display: none;
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+}
+#submit {
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: 1px solid hsl(223, 87%, 63%);
+    background-color: hsl(223, 87%, 63%);
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}
+
+/* -------- IMAGE -------- */
+.stat-img {
+    max-width: 100%;
+}
+/* -------- ICON SOC-MED -------- */
+.soc-med {
+    display: grid;
+    gap: 2.5rem;
+    place-items: center;
+}
+.icon {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    color: hsl(223, 87%, 63%);
+}
+li {
+    border: 1px solid hsl(223, 100%, 88%);
+    padding: 8px;
+    border-radius: 50%;
+}
+.copyright {
+    color: hsl(0, 0%, 59%);
+}
+
+
+
+/* ======== MEDIA Q ======== */
+@media screen and (min-width: 1440px) {
+    .heading {
+        font-size: 4.5rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+    form {
+        display: grid;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    .copyright {
+        font-size: 1.5rem;
+    }
+}
